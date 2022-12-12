@@ -21,4 +21,4 @@ app.use('/graphql', graphqlHTTP({
   graphiql: true,
 }));
 app.listen(4000);
-console.log('http://localhost:4000/graphql 에서 GraphQL API 서버가 구동 중입니다.');
+console.log('GraphQL API 서버가 구동 중입니다.');
