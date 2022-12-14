@@ -15,10 +15,16 @@ var root = {
 };
 
 var app = express();
+
+app.use('/',(req, res) => {
+  res.send('Please access to /graphql')
+});
+
 app.use('/graphql', graphqlHTTP({
   schema: schema,
   rootValue: root,
   graphiql: true,
 }));
+
 app.listen(4000);
-console.log('GraphQL API 서버가 구동 중입니다.');
+console.log('GraphQL API server is running...');
