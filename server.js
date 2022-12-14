@@ -16,7 +16,7 @@ var root = {
 
 var app = express();
 
-app.use('/',(req, res) => {
+app.get('/',(req, res) => {
   res.send('Please access to /graphql')
 });
 
